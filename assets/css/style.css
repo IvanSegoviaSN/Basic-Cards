@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(0deg, #ba82db00, #9baab900), url(https://hdqwalls.com/wallpapers/marvel-contest-of-champions-x-men-vz.jpg) no-repeat;
+    background-size: cover;
+}
+
+button {
+    margin: 0 1%;
+}
+
+.mainPanel {
+    margin-top: 1%;
+}
+
+.cardPanel {
+    width: 75%;
+}
+
+.cardItem {
+    margin-bottom: 12px;
+
+    border-top-right-radius: 50px;
+    border-top-left-radius: 12px;
+
+}
+
+.card-body {
+    flex: 0 0 auto;
+}
+
+.cardImg {
+    height: 320px;
+
+    background: url("https://scontent-mad1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/143982823_741236623180838_7233973581989744866_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=KsDKCnmb_hsAX9D41HE&tp=1&oh=960f2ea5694a78bfb1c02921647b4cb8&oe=605530A6");
+    background-size: cover;
+
+    border-top-right-radius: 50px;
+    border-top-left-radius: 12px;
+    animation: Nasd;
+}
+
+
+.row {
+    --bs-gutter-x: 0rem;
+}
+
+
