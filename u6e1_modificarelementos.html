@@ -3,31 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+
+    <!-- Boostrap style -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body onload="createMain()">
 <div class="container-fluid">
+
+    <div id="mainModal" class="modalContainer">
+        <div class="modal-content">
+            <p>
+                <input class="form-control" type="text" id="title" placeholder="Título">
+                <small class="form-text text-muted">Nombre del héroe.</small>
+            </p>
+            <p>
+                <textarea class="form-control" id="description" placeholder="Descripción"></textarea>
+                <small class="form-text text-muted">Descripción del héroe.</small>
+            </p>
+            <p>
+                <select class="form-control" id="category">
+                    <option value="0">Magia</option>
+                    <option value="1">Fuerza</option>
+                    <option value="2">Volador</option>
+                </select>
+                <small class="form-text text-muted">Género del héroe.</small>
+            </p>
+            <p>
+                <button type="button" class="btn btn-dark" onclick="closeModal(true);">Guardar héroe</button>
+                <button type="button" class="btn btn-danger" onclick="closeModal();">Cerrar panel</button>
+            </p>
+        </div>
+    </div>
 
     <div class="row justify-content-center mainPanel">
         <div class="col-12 d-flex justify-content-center">
             <div class="card cardPanel">
                 <div class="card-header">
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-primary">Todos los héroes</a>
+                    <a href="#" class="btn btn-primary">Héroes ordenados - magia</a>
+                    <a href="#" class="btn btn-primary">Héroes ordenados - fuerza</a>
+                    <a href="#" class="btn btn-primary">Héroes ordenados - volador</a>
                 </div>
                 <div class="card-body">
                     <div id="cardBox" class="row d-flex flex-wrap justify-content-start">
-
+                        <!-- cardItem -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 </div>
 
-<script src="assets/js/Figure.js"></script>
+<script src="assets/js/Card.js"></script>
 <script src="assets/js/script.js"></script>
+<script src="assets/js/data.js"></script>
 </body>
 </html>
