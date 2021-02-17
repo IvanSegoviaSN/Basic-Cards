@@ -1,2 +1,2 @@
-# OldGames
-Basic events with javascript
+# Basic-Cards
+Basic events & cards with javascript and bootstrap
