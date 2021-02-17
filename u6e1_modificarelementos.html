@@ -12,39 +12,42 @@
 <body onload="createMain()">
 <div class="container-fluid">
 
+    <!-- Modal -->
     <div id="mainModal" class="modalContainer">
         <div class="modal-content">
             <p>
+                <input class="form-control" type="text" id="background" placeholder="Imagen de fondo">
+                <small class="form-text text-muted">Imagen del personaje.</small>
+            </p>
+            <p>
                 <input class="form-control" type="text" id="title" placeholder="Título">
-                <small class="form-text text-muted">Nombre del héroe.</small>
+                <small class="form-text text-muted">Nombre del personaje.</small>
             </p>
             <p>
                 <textarea class="form-control" id="description" placeholder="Descripción"></textarea>
-                <small class="form-text text-muted">Descripción del héroe.</small>
+                <small class="form-text text-muted">Descripción del personaje.</small>
             </p>
             <p>
                 <select class="form-control" id="category">
-                    <option value="0">Magia</option>
-                    <option value="1">Fuerza</option>
-                    <option value="2">Volador</option>
+                    <option value="Dibujos">Dibujos</option>
+                    <option value="Ficticio">Ficticio</option>
+                    <option value="Barcenas">Bárcenas</option>
                 </select>
-                <small class="form-text text-muted">Género del héroe.</small>
+                <small class="form-text text-muted">Género del personaje.</small>
             </p>
             <p>
-                <button type="button" class="btn btn-dark" onclick="closeModal(true);">Guardar héroe</button>
+                <button type="button" class="btn btn-dark" onclick="closeModal(true);">Guardar personaje</button>
                 <button type="button" class="btn btn-danger" onclick="closeModal();">Cerrar panel</button>
             </p>
         </div>
     </div>
 
+    <!-- Panel -->
     <div class="row justify-content-center mainPanel">
         <div class="col-12 d-flex justify-content-center">
             <div class="card cardPanel">
                 <div class="card-header">
-                    <a href="#" class="btn btn-primary">Todos los héroes</a>
-                    <a href="#" class="btn btn-primary">Héroes ordenados - magia</a>
-                    <a href="#" class="btn btn-primary">Héroes ordenados - fuerza</a>
-                    <a href="#" class="btn btn-primary">Héroes ordenados - volador</a>
+                    <button class="btn btn-primary" id="orderButtonCards">Ordenar los personajes por familia</button>
                 </div>
                 <div class="card-body">
                     <div id="cardBox" class="row d-flex flex-wrap justify-content-start">

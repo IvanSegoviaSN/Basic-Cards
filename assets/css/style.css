@@ -1,10 +1,10 @@
 body {
-    background: linear-gradient(0deg, #ba82db00, #9baab900), url(https://hdqwalls.com/wallpapers/marvel-contest-of-champions-x-men-vz.jpg) no-repeat;
+    background: linear-gradient(0deg, #ba82db00, #9baab900), url(https://www.alegorias.es/wp-content/uploads/2017/03/tree-life-alegorias.es-1.jpg) no-repeat;
     background-size: cover;
 }
 
-button {
-    margin: 0 1%;
+.card-header:first-child {
+    align-self: center;
 }
 
 .mainPanel {
@@ -18,13 +18,10 @@ button {
 .cardItem {
     margin-bottom: 12px;
 
-    border-top-right-radius: 50px;
+    border-top-right-radius: 12px;
     border-top-left-radius: 12px;
 
-}
-
-.card-body {
-    flex: 0 0 auto;
+    box-shadow: 0px 10px 30px 20px rgba(0,0,0,0.75);
 }
 
 .cardImg {
@@ -32,14 +29,21 @@ button {
 
     background-size: cover;
 
-    border-top-right-radius: 50px;
+    border-top-right-radius: 12px;
     border-top-left-radius: 12px;
-    animation: Nasd;
 }
-
 
 .row {
     --bs-gutter-x: 0rem;
+}
+
+.card {
+    background-color: unset;
+    border: 0px solid;
+}
+
+.card-footer {
+    background-color: rgb(225, 224, 224);
 }
 
 .modalContainer {
